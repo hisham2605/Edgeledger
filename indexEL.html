@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="Css,EL/style.css">
     <link rel="stylesheet" media="screen and (max-width:768px)" href="Css,EL/mobile.css">
     <link rel="stylesheet" media="screen and (mid-width:1100px)" href="Css,EL/widescreen.css">
+    <link rel="stylesheet" media="screen and (mid-width:768px)" href="Css,EL/tablet.css">
     <title>EL Financial | Accounting & Investment</title>
 </head>
 <body>
@@ -153,7 +154,7 @@
         <div class="contact-form bg-primary p-2">
             <h2 class="m-heading">Contact Us</h2>
             <p>Please use the form below to contact us</p>
-            <form>
+            <form method="POST" data-netlify-recaptcha="true" data-netlify-recaptcha="true">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" placeholder="Enter Name">
@@ -169,6 +170,9 @@
                 <div class="form-group">
                     <label for="message">Message</label>
                     <textarea name="message" id="message" placeholder="Enter Message"></textarea>
+                    <div class="my-2">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
                 </div>
                 <input type="submit" value="Send" class="btn btn-dark">
             </form>
